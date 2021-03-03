@@ -1,0 +1,270 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.restaurants h2 {
+    text-align: center;
+}
+
+.logo_header {
+    padding: 16px;
+    text-align: center;
+    font-family: Shrikhand,"cursive";
+    box-shadow: 0 0 0 8px;
+    z-index: 1000;  
+}
+
+.logo_header {
+    margin: 0;
+    display: block;
+    font-size: 32px;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    padding: 20px 16px;
+    background-color: #aeaeae;
+    font-size: 19px;
+    position: relative;
+}
+
+.local_title {
+    font-weight: 700;
+}
+ 
+
+.explorer {
+    padding: 20px;
+    text-align: center;
+    background-color:#f6f6;
+
+}
+
+.subtitle {
+    font-family: roboto, sans-serif;
+    color: #000000;
+    font-weight: 300;
+    margin: 24px 0;
+}
+
+
+/*BOOKING*/
+
+.container_booking {
+    max-width: 1280px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.list_icon {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    position: absolute;
+    left: -15px;
+    top:calc(50% - 17.5px);
+    background-color: #9356dc;
+    color: white;
+    position: flexed;
+    animation: loader 0.01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+}
+
+.mobile_icon:hover {
+    background: #f5edff ;
+
+}
+
+.mobile_icon {
+    background-color: #f6f6f6;
+    padding: 24px 30px;
+    border-radius: 16px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 13%)
+}
+
+.mobile_icon i {
+    margin-right: 16px;
+    color: #7e7e7e;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    counter-reset: compteListe;
+    margin-left: 31px;
+}
+
+.explorer_btn {
+    font-size: 20pxpx;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    border: none;
+}
+
+.explorer_btn {
+    background: linear-gradient(#e972da, #a55cdb);
+    border-radius: 100px;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.choose {
+    font-size: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin:15px;
+}
+
+.restaurants {
+    background-color: #f6f6f6;   
+}
+
+.title_card {
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.menu_card {
+    background-color:#ffffff;
+    margin: 10px;
+    max-width: 100%;
+    width: 320px;
+    height: 220px;
+    max-height: 100%;
+    border-radius: 16px 16px 16px 16px;
+}
+
+.menu_card img {
+    height: 140px;
+    max-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    width: 320px;
+    border-radius: 16px 16px 0 0;
+}
+
+.soustitre {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.soustitre h3 {
+    margin: 0;
+}
+
+.soustitre p {
+    margin: 0;
+}
+
+i {
+   display: flex;
+   justify-content: right;
+   transition-duration: 0.1s;
+   cursor: pointer;
+   transform: scale(1.02);
+}
+
+i.like-bg {
+    display:none;
+    color: #9356dc;
+}
+
+.soustitre:hover i.like-bg {
+    display: flex;
+
+}
+
+.soustitre:hover i.like-nobg {
+    display: none;
+}
+
+.link .footer_list .footer_proposition .footer_link {
+    text-decoration: none;
+    
+}
+
+.link .footer_list .footer_contact .footer_link {
+    text-decoration: none;
+    
+}
+
+.logo_footer {
+    margin: 0;
+    padding: 0;
+
+/*FOOTER*/
+}
+.logo_footer path{
+    fill: white !important;
+}
+
+i:hover {
+    color: #c165db;;
+}
+
+footer {
+    background-color: #353535;
+    height: 100%;
+}
+
+.footer_list a {
+    color: #ffffff;
+}
+
+.footer_list {
+    list-style-type: none;
+}
+
+
+@media all and (max-width: 1560px) and (min-width: 670px) {
+
+   .list_icon::first-child{
+      display:flex;
+      flex: 1;
+      margin-left: 12px;
+    }
+
+    .list_icon {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        max-width: auto;
+
+    }
+
+}
