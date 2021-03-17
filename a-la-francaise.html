@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +12,25 @@
   de repas en ligne. Notre concept permet aux utilisateurs de composer leur 
   propre menu et réduire leur temps d’attente dans les restaurants.">
   <link rel="stylesheet" href="css/menu.css">
-
+  
   <!--body-->
-
 <body>
-
-  <!-- HEADER -->
-  <header>
+  <!--LOADER-->
+  <div id="wrapper">
+    <h2>Chargement</h2>
+    <div class="loading-spinner"></div>
+  </div>
   <div class="logo">
+    <div class="arrow_back">
+      <a href="index.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+    </div>
+  <!-- HEADER -->
+  <header>   
     <img class="logo_header" src="./images/logo/ohmyfood.png" alt="logo ohmayfood">
   </div>
-  <hr> 
   </header>
   <section class="menu">
  
@@ -31,7 +38,7 @@
 
   <div class="french_menu">
     <div class="title">
-      <h1>A la française</h1>
+      <h1>À la française</h1>
       <div class="like_transition">
       <i class="like-nobg far fa-heart fa-2x"></i>
       <i class="like-bg fas fa-heart fa-2x"></i>
@@ -41,16 +48,17 @@
 		<!--ENTREES-->
       <div class="entree">
         <h2 class="menu_title">ENTREES</h2>
+        <div class="trait"></div>
       </div>
     <article class="menu">
     <div class="card">
       <div class="card_container">
-        <div>
+        <div class="entree_name_container">
           <h3 class="plat_name">Tarte de poulpe acidulé</h3>
           <p class="desc">Acidulé aux zestes d'orange</p>
         </div>
-        <div>
-          <p class="prise"><strong class="Prix">25€</strong></p>
+        <div class="price_container">
+          <p class="price"><strong class="Price">25€</strong></p>
         </div>
         <div class="choose">
           <i class="fas fa-check-circle"></i>
@@ -60,11 +68,11 @@
 
     <div class="card">
       <div class="card_container">
-      <div>
+      <div class="entree_name_container">
         <h3 class="plat_name">Velouté de légumes d'antan</h3>
         <p class="desc">Carotte, panais, topinambour</p>
       </div>
-      <div>
+      <div class="price_container">
         <p class="prise"><strong class="Prix">35€</strong></p>
       </div>
       <div class="choose">
@@ -74,11 +82,11 @@
     </div>
     <div class="card">
       <div class="card_container">
-      <div>
+      <div class="entree_name_container">
       <h3 class="plat_name">Soup a l'ognion</h3>
       <p class="desc">Revisitée</p>
       </div>
-      <div>
+      <div class="price_container">
       <p class="prise"><strong class="prise">20€</strong></p>
       </div>
       <div class="choose">
@@ -86,22 +94,22 @@
       </div>
     </div>
     </div>
-
 		<!--ENTREES-->
-
+    
 		<!--PLATS-->
   <div class="plats">
     <div class="menu">
     <h2 class="menu_title">PLATS</h2>
+    <div class="trait"></div>
     </div>
   </div>
     <div class="card">
       <div class="card_container">
-          <div>
+          <div class="plat_name_container">
           <h3 class="plat_name">Coquille Saint-jacques </h3>
           <p class="desc">Accompagnée d'une purée de panais</p>
           </div>
-          <div>
+          <div class="price_container">
           <p class="prise"><strong class="prise">40€</strong></p>
           </div>
         <div class="choose">
@@ -111,13 +119,13 @@
     </div>
   <div class="card">
     <div class="card_container">
-      <div>
+      <div class="plat_name_container">
       <h3 class="plat_name">Magret de canard</h3>
       <p class="desc">Et parmentier de pommes de terres</p>
       </div>
       <div>
       <p class="prise"><strong class="prise">35€</strong></p>
-      </div>
+      </div class="price_container">
     <div class="choose">
       <i class="fas fa-check-circle"></i>
     </div>
@@ -125,11 +133,11 @@
   </div>
   <div class="card">
   <div class="card_container">
-    <div>
+    <div class="plat_name_container">
     <h3 class="plat_name">Pigeonneau d'Ille-et-vilaine</h3>
     <p class="desc">Sur son lit de gnocchis aux legumes</p>
     </div>
-    <div>
+    <div class="price_container">
     <p class="prise"><strong class="prise">44€</strong></p>
     </div>
   <div class="choose">
@@ -143,15 +151,16 @@
 <div class="desserts">
   <div class="menu">
   <h2 class="menu_title">DESSERTS</h2>
+  <div class="trait"></div>
   </div>
 </div>
   <div class="card">
     <div class="card_container">
-        <div>
+        <div class="desserts_name_container">
         <h3 class="plat_name">Pétale de violettes glacés</h3>
         <p class="desc">Et purée de noisettes</p>
         </div>
-        <div>
+        <div class="price_container">
         <p class="prise"><strong class="prise">18€</strong></p>
         </div>
       <div class="choose">
@@ -161,11 +170,11 @@
   </div>
 <div class="card">
   <div class="card_container">
-    <div>
+    <div class="desserts_name_container">
     <h3 class="plat_name">Fondant au chocolat</h3>
     <p class="desc">Revisité</p>
     </div>
-    <div>
+    <div class="price_container">
     <p class="prise"><strong class="prise">22€</strong></p>
     </div>
   <div class="choose">
@@ -175,11 +184,11 @@
 </div>
 <div class="card">
 <div class="card_container">
-  <div>
+  <div class="desserts_name_container">
   <h3 class="plat_name">Millefeuille croustillant</h3>
   <p class="desc">Myrtilles et pâte d'amande</p>
   </div>
-  <div>
+  <div class="price_container">
   <p class="prise"><strong class="prise">35€</strong></p>
   </div>
 <div class="choose">
@@ -190,7 +199,7 @@
 <!--DESSERTS-->
   </div>
   </section>
-  <a href="#restaurants">
+  <a class="explorer" href="#restaurants">
   <button class="explorer-btn">
     Commander
   </button>
