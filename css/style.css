@@ -1,9 +1,50 @@
-body {
+* {
     padding: 0;
     margin: 0;
-    font-family: roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+#wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    animation: 3s hidewrapper forwards;
+    background-color: gray;
+    opacity: 0.8;
+    z-index: 100000;
+    color: #ffffff;
+    text-align: center;
+    display:inline-block;
+    justify-content: center;
+}
+
+.loading-spinner {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border: 3px solid rgba(225, 225, 225, 0.3);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    margin-bottom: 80px;
+    animation: 1s spin infinite ease-in-out;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes hidewrapper {
+    to {
+        visibility: hidden;
+    }
+
 }
 
 .restaurants h2 {
@@ -13,9 +54,9 @@ body {
 .logo_header {
     padding: 16px;
     text-align: center;
-    font-family: Shrikhand,"cursive";
+    font-family: "Shrikhand", "cursive";
     box-shadow: 0 0 0 8px;
-    z-index: 1000;  
+    z-index: 1000;
 }
 
 .logo_header {
@@ -36,12 +77,12 @@ body {
 .local_title {
     font-weight: 700;
 }
- 
+
 
 .explorer {
     padding: 20px;
     text-align: center;
-    background-color:#f6f6;
+    background-color: #f6f6f6;
 
 }
 
@@ -59,8 +100,9 @@ body {
     max-width: 1280px;
     display: block;
     margin: auto;
-    position: relative;
+    position: relative;   
 }
+
 
 .list_icon {
     margin: 0;
@@ -82,10 +124,10 @@ body {
     border-radius: 100%;
     position: absolute;
     left: -15px;
-    top:calc(50% - 17.5px);
+    top: calc(50% - 17.5px);
     background-color: #9356dc;
     color: white;
-    position: flexed;
+    position: flex;
     animation: loader 0.01s;
     animation-delay: 1.75s;
     animation-fill-mode: both;
@@ -93,7 +135,7 @@ body {
 }
 
 .mobile_icon:hover {
-    background: #f5edff ;
+    background: #f5edff;
 
 }
 
@@ -104,6 +146,7 @@ body {
     margin: 20px;
     position: relative;
     box-shadow: 4px 4px 8px rgb(0 0 0 / 13%)
+    
 }
 
 .mobile_icon i {
@@ -122,7 +165,7 @@ body {
 }
 
 .explorer_btn {
-    font-size: 20pxpx;
+    font-size: 20px;
     font-weight: bold;
     color: #ffffff;
     cursor: pointer;
@@ -146,11 +189,12 @@ body {
 .card {
     display: flex;
     flex-wrap: wrap;
-    margin:15px;
+    margin: 15px;
+    
 }
 
 .restaurants {
-    background-color: #f6f6f6;   
+    background-color: #f6f6f6;
 }
 
 .title_card {
@@ -159,7 +203,7 @@ body {
 }
 
 .menu_card {
-    background-color:#ffffff;
+    background-color: #ffffff;
     margin: 10px;
     max-width: 100%;
     width: 320px;
@@ -183,6 +227,7 @@ body {
     padding: 0 20px;
     align-items: center;
 }
+
 .soustitre h3 {
     margin: 0;
 }
@@ -192,15 +237,15 @@ body {
 }
 
 i {
-   display: flex;
-   justify-content: right;
-   transition-duration: 0.1s;
-   cursor: pointer;
-   transform: scale(1.02);
+    display: flex;
+    justify-content: right;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 i.like-bg {
-    display:none;
+    display: none;
     color: #9356dc;
 }
 
@@ -215,48 +260,51 @@ i.like-bg {
 
 .link .footer_list .footer_proposition .footer_link {
     text-decoration: none;
-    
+
 }
 
 .link .footer_list .footer_contact .footer_link {
     text-decoration: none;
-    
+
 }
 
-.logo_footer {
-    margin: 0;
-    padding: 0;
+    /*FOOTER*/
 
-/*FOOTER*/
-}
-.logo_footer path{
+.logo_footer path {
     fill: white !important;
 }
 
 i:hover {
-    color: #c165db;;
+    color: #c165db;
+    ;
 }
 
 footer {
     background-color: #353535;
     height: 100%;
+    padding: 30px;
+}
+.footer_proposition{
+    padding-bottom: 10px;
 }
 
 .footer_list a {
     color: #ffffff;
+  
 }
 
 .footer_list {
     list-style-type: none;
+    margin-top: 20px;
 }
 
 
 @media all and (max-width: 1560px) and (min-width: 670px) {
 
-   .list_icon::first-child{
-      display:flex;
-      flex: 1;
-      margin-left: 12px;
+    .list_icon:first-child {
+        display: flex;
+        flex: 1;
+        margin-left: 12px;
     }
 
     .list_icon {
