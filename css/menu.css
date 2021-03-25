@@ -15,6 +15,7 @@
     opacity: 0.8;
     z-index: 100000;
     color: #ffffff;
+    display: flex;
     text-align: center;
     justify-content: center;
 }
@@ -25,6 +26,7 @@
     display: inline-block;
     border: 3px solid rgba(225, 225, 225, 0.3);
     border-radius: 50%;
+    margin-right: 10px;
     border-top-color: #ffffff;
     margin-bottom: 80px;
     animation: 1s spin infinite ease-in-out;
@@ -45,7 +47,7 @@
 }
 
 
-h1 {
+p {
     font-size: 30px;
     font-weight: bold;
     margin: 10px 0;
@@ -65,13 +67,16 @@ img {
 }
 
 .logo_header {
-    width: 50%;
+    padding: 16px;
+    text-align: center;
+    font-family: "Shrikhand", "cursive";
+    z-index: 1000;
 }
 
-.logo {
-    font-size: 30px;
-    padding: 30px 0 10px 0;
-    text-align: center;
+.logo_header {
+    margin: 0;
+    display: block;
+    font-size: 32px;
 }
 
 .arrow_back {
@@ -121,7 +126,6 @@ i.like-bg {
 }
 
 .card {
-    height: 100px;
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
@@ -129,6 +133,30 @@ i.like-bg {
     transform: translateY(-30px);
     opacity: 0;
     animation: 2s card forwards 3s;
+}
+
+.explorer_btn {
+    background: linear-gradient(#e972da, #a55cdb);
+    border-radius: 100px;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.order{
+    text-align: center;
+    margin: 50px;
 }
 
 .card:nth-child(2) {
@@ -241,10 +269,11 @@ i.like-bg {
     font-size: 20px;
     border: none;
     color: #ffffff;
+   text-decoration: none;
 }
 
 .explorer {
-    margin-bottom: 70px;
+    margin: 70px;
     display: block;
     text-align: center;
 }
