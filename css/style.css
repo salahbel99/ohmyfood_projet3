@@ -237,31 +237,34 @@
 }
 
 i {
-    display: flex;
-    justify-content: right;
     transition-duration: 0.1s;
     cursor: pointer;
     transform: scale(1.02);
 }
 
 i.like-bg {
-    display: none;
+    position: relative;
     color: #9356dc;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
-.soustitre:hover i.like-bg {
-    display: flex;
-
+i.like-nobg{
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s;
 }
 
-.soustitre:hover i.like-nobg {
-    display: none;
+.like_transition:hover i.like-bg {
+    opacity: 1;
+    transition: opacity 1s;
 }
 
-.link .footer_list .footer_proposition .footer_link {
-    text-decoration: none;
-
+.like_transition:hover i.like-nobg {
+    opacity: 0;
+    transition: opacity 1s;
 }
+
 
 .link .footer_list .footer_contact .footer_link {
     text-decoration: none;

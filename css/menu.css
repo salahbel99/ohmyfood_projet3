@@ -4,32 +4,6 @@
     scroll-behavior: smooth;
 }
 
-#wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    animation: 3s hidewrapper forwards;
-    background-color: gray;
-    opacity: 0.8;
-    z-index: 100000;
-    color: #ffffff;
-    text-align: center;
-    justify-content: center;
-}
-
-.loading-spinner {
-    width: 80px;
-    height: 80px;
-    display: inline-block;
-    border: 3px solid rgba(225, 225, 225, 0.3);
-    border-radius: 50%;
-    border-top-color: #ffffff;
-    margin-bottom: 80px;
-    animation: 1s spin infinite ease-in-out;
-}
-
 @keyframes spin {
     to {
         transform: rotate(360deg);
@@ -98,19 +72,6 @@ img {
     padding: 30px;
 }
 
-i {
-    display: flex;
-    justify-content: right;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    transform: scale(1.02);
-}
-
-i.like-bg {
-    display: none;
-    color: #9356dc;
-}
-
 .soustitre:hover i.like-bg {
     display: flex;
 
@@ -119,6 +80,7 @@ i.like-bg {
 .soustitre:hover i.like-nobg {
     display: none;
 }
+
 
 .card {
     height: 100px;
@@ -156,10 +118,6 @@ i.like-bg {
     margin-bottom: 5px;
 }
 
-.entree_name_container {
-    width: 80%;
-}
-
 .trait {
     margin-bottom: 20px;
     height: 2px;
@@ -167,12 +125,19 @@ i.like-bg {
     background: #99e2d0;
 }
 
+.entree_name_container {
+    width: 80%;
+    text-align: left;
+}
+
 .plat_name_container {
     width: 80%;
+    text-align: left;
 }
 
 .desserts_name_container {
     width: 80%;
+    text-align: left;
 }
 
 .price_container {
@@ -216,17 +181,33 @@ i.like-bg {
     transition: width 0.5s ease-in-out;
 }
 
+i {
+    transition-duration: 0.1s;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
 i.like-bg {
-    display: none;
+    position: relative;
     color: #9356dc;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+i.like-nobg{
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 .like_transition:hover i.like-bg {
-    display: flex;
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 .like_transition:hover i.like-nobg {
-    display: none;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .choose i {
