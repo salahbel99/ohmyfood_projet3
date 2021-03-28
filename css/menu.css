@@ -4,34 +4,6 @@
     scroll-behavior: smooth;
 }
 
-#wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    animation: 3s hidewrapper forwards;
-    background-color: gray;
-    opacity: 0.8;
-    z-index: 100000;
-    color: #ffffff;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.loading-spinner {
-    width: 80px;
-    height: 80px;
-    display: inline-block;
-    border: 3px solid rgba(225, 225, 225, 0.3);
-    border-radius: 50%;
-    margin-right: 10px;
-    border-top-color: #ffffff;
-    margin-bottom: 80px;
-    animation: 1s spin infinite ease-in-out;
-}
-
 @keyframes spin {
     to {
         transform: rotate(360deg);
@@ -43,7 +15,6 @@
     to {
         visibility: hidden;
     }
-
 }
 
 p {
@@ -146,6 +117,7 @@ i.like-nobg{
     display: none;
 }
 
+
 .card {
     background-color: #ffffff;
     border-radius: 20px;
@@ -205,10 +177,6 @@ a{
     margin-bottom: 5px;
 }
 
-.entree_name_container {
-    width: 80%;
-}
-
 .trait {
     margin-bottom: 20px;
     height: 2px;
@@ -216,12 +184,19 @@ a{
     background: #99e2d0;
 }
 
+.entree_name_container {
+    width: 80%;
+    text-align: left;
+}
+
 .plat_name_container {
     width: 80%;
+    text-align: left;
 }
 
 .desserts_name_container {
     width: 80%;
+    text-align: left;
 }
 
 .price_container {
@@ -265,6 +240,14 @@ a{
     transition: width 0.5s ease-in-out;
 }
 
+i {
+    display: flex;
+    justify-content: right;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
 i.like-bg {
     position: relative;
     color: #9356dc;
@@ -282,6 +265,7 @@ i.like-nobg{
     opacity: 1;
     transition: opacity 1s;
 }
+
 .like_transition:hover i.like-nobg {
     opacity: 0;
     transition: opacity 1s;
